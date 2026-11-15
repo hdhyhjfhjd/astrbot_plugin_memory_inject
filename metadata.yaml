@@ -1,0 +1,9 @@
+name: astrbot_plugin_memory_inject
+display_name: 记忆档案注入
+short_desc: 按 ro_/rw_/off_ 前缀分区注入 memory 目录下的 .md 档案
+desc: 把 memory 目录中的 .md 档案按文件名前缀分区（ro_只读 / rw_可写 / off_不注入），以独立 <memory_archives> 标签注入到每次 LLM 请求尾部（extra_user_content_parts，缓存友好）。只 append 不替换，可与表情包等其它注入插件叠加共存。改文件名即改权限，AI 可自主更新 rw_ 档案。
+author: hdhyhjfhjd
+version: 1.1.1
+repo: https://github.com/hdhyhjfhjd/astrbot_plugin_memory_inject
+license: MIT
+astrbot_version: ">=4.0.0"

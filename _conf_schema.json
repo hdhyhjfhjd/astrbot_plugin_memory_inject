@@ -1,0 +1,32 @@
+{
+  "enable_inject": {
+    "type": "bool",
+    "title": "启用注入",
+    "default": true,
+    "description": "是否每次请求注入记忆规则块"
+  },
+  "memory_admin_only": {
+    "type": "bool",
+    "title": "/memory 仅管理员可用",
+    "default": true,
+    "description": "仅管理员可执行 /memory 指令"
+  },
+  "inject_target": {
+    "type": "string",
+    "title": "注入位置",
+    "default": "system",
+    "description": "system=头部(推荐)；tail=尾部"
+  },
+  "memory_dir": {
+    "type": "string",
+    "title": "记忆档案目录",
+    "default": "",
+    "description": "存放 .md 档案的目录，见 README"
+  },
+  "custom_rules": {
+    "type": "text",
+    "title": "附加规则（可选）",
+    "default": "",
+    "description": "追加到规则块末尾的自定义文本，换行分隔多条"
+  }
+}
